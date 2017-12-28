@@ -1,0 +1,59 @@
+[device info]
+model_number = 401
+model_name  = SR_DH4DMainBoard
+
+[type info]
+velocity_to_value_ratio 	= 83.77
+
+value_of_0_radian_position      = 2048
+value_of_min_radian_position    = 0
+value_of_max_radian_position    = 4095
+min_radian                      = -3.14159265
+max_radian                      =  3.14159265
+
+[baud rate]
+# baud rate | value
+1000000     |  1
+500000      |  3
+400000      |  4
+250000      |  7
+200000      |  9
+115200      |  16
+57600       |  34
+19200       |  103
+9600        |  207
+2250000     |  250
+2500000     |  251
+3000000     |  252
+
+[control table]
+#  addr | item name                     | length | access | memory
+0	|MODEL_NUMBER	|2	|R	|EEPROM
+2	|VERSION_OF_FIRMWARE	|1	|R	|EEPROM
+3	|ID	|1	|RW	|EEPROM
+4	|BAUD_RATE	|1	|RW	|EEPROM
+5	|RETURN_DELAY_TIME	|1	|RW	|EEPROM
+16	|STATUS_RETURN_LEVEL	|1	|RW	|EEPROM
+20	|EMULATE_12BIT_MOTION_RANGE	|1	|RW	|EEPROM
+24	|TORQUE_ENABLE	|1	|RW	|RAM
+30	|GOAL_POSITION	|2	|RW	|RAM
+36	|PRESENT_POSITION	|2	|R	|RAM
+43	|PRESENT_TEMPERATURE	|1	|R	|RAM
+46	|MOVING	|1	|R	|RAM
+100	|HAND_LED_RED	|1	|RW	|RAM
+101	|HAND_LED_GREEN	|1	|RW	|RAM
+102	|HAND_LED_BLUE	|1	|RW	|RAM
+110	|BT_MODULE_INSTALLED	|1	|R	|EEPROM
+111	|BT_MODULE_ON	|1	|RW	|RAM
+112	|BT_PAIRING_CODE	|2	|RW	|EEPROM
+120	|PALM_IR_SENSOR_INSTALLED	|1	|R	|EEPROM
+121	|PALM_IR_SENSOR_READING	|2	|R	|RAM
+125	|CAPACITIVE_SENSORS_INSTALLED	|1	|R	|EEPROM
+126	|CAPACITIVE_SENSOR_1_READING	|2	|R	|RAM
+128	|CAPACITIVE_SENSOR_2_READING	|2	|R	|RAM
+190	|RW_SHARED_MEMORY_BYTE_0	|1	|RW	|RAM
+191	|RW_SHARED_MEMORY_BYTE_1	|1	|RW	|RAM
+192	|RW_SHARED_MEMORY_BYTE_2	|1	|RW	|RAM
+193	|RW_SHARED_MEMORY_BYTE_3	|1	|RW	|RAM
+194	|RW_SHARED_MEMORY_BYTE_4	|1	|RW	|RAM
+195	|RW_SHARED_MEMORY_BYTE_5	|1	|RW	|RAM

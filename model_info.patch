@@ -1,0 +1,15 @@
+--- model_info.list
++++ model_info.list
+@@ -29,3 +29,11 @@
+         43288   | PRO_M42_10_S260_R
+         46096   | PRO_M54_40_S250_R
+         46352   | PRO_M54_60_S250_R
++		400		| SR_DH4DActuator
++		401		| SR_DH4DMainBoard
++		405		| SR_EROSMainBoard
++		404		| SR_micro28Actuator
++		406		| SR_micro56Actuator
++		407		| SR_AltXL320Actuator
++		408		| SR_micro44Actuator
++		409		| SR_mini67Actuator
+
